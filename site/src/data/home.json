@@ -1,9 +1,9 @@
 {
   "hero": {
-    "name": "Madhushri Patil",
+    "name": "I build AI systems for what’s next.",
     "eyebrow": "Voice AI · Speech · Evals",
     "location": "Hubballi, India",
-    "intro": "# I build **AI systems for what’s next.**\n\nI’m a fresh AI Engineering graduate exploring the edge of Voice AI — from building conversational agents and evaluating real conversations to working on AI agent infrastructure and products for blue-collar workers.\n\nI’m particularly interested in where Voice AI is heading: **S2S models, real-time voice orchestration, RL-finetuned ASR, and better ways to evaluate AI before it reaches production.**\n\nI’m early in my journey, but I like staying ahead of the curve, picking up hard problems, and turning ideas into things that actually work.",
+    "intro": "I’m a fresh AI Engineering graduate exploring the edge of Voice AI — from building conversational agents and evaluating real conversations to working on AI agent infrastructure and products for blue-collar workers.\n\nI’m particularly interested in where Voice AI is heading: S2S models, real-time voice orchestration, RL-finetuned ASR, and better ways to evaluate AI before it reaches production.\n\nI’m early in my journey, but I like staying ahead of the curve, picking up hard problems, and turning ideas into things that actually work.",
     "portrait": "/images/WhatsApp Image 2026-08-17 at 10.14.42 PM.jpeg",
     "status": "Open to roles · 2026",
     "email": "patilllmadhushri@gmail.com",
@@ -34,7 +34,7 @@
       "period": "2022 — 26",
       "company": "KLE Technological University",
       "role": "B.Tech, AI Engineering",
-      "body": "Machine learning, deep learning, NLP, speech processing and robotics on paper. In practice: Python, C++, and evenings spent wiring LiveKit, Deepgram and ElevenLabs into things that talk back.",
+      "body": "Machine learning, deep learning, NLP, speech processing, and robotics on paper. In practice: Python, C++, and plenty of evenings spent wiring LiveKit, pipecat  into things that actually talk back.",
       "takeaway": ""
     }
   ],
