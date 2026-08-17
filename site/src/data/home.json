@@ -4,7 +4,7 @@
     "eyebrow": "Voice AI · Speech · Evals",
     "location": "Hubballi, India",
     "intro": "I work on voice AI — building agents that talk to people in Kannada, Hindi and English, and figuring out where they go wrong. AI Engineering student at KLE Tech, graduating 2026.",
-    "portrait": "/images/WhatsApp Image 2026-08-17 at 1.36.46 PM.jpeg",
+    "portrait": "/images/WhatsApp Image 2026-08-17 at 10.14.42 PM.jpeg",
     "status": "Open to roles · 2026",
     "email": "patilllmadhushri@gmail.com",
     "github": "https://github.com/patilllmadhushri-ship-it",
@@ -43,15 +43,15 @@
       "title": "Voice Call Audit Assistant",
       "badge": "DEMO ↗",
       "link": "https://www.loom.com/share/fc24b782fd1b432ca0f090dfd5b77ae6",
-      "image": "/images/WhatsApp Image 2026-08-17 at 1.42.50 PM.jpeg",
+      "image": "/images/WhatsApp Image 2026-08-17 at 10.37.13 PM.jpeg",
       "body": "Auditing voice calls typically means manually listening through hours of recordings  slow and hard to scale. Inspired by EkStep Foundation's voice AI testing framework, I built a proof-of-concept system that analyzes call transcripts, flags potential issues, and surfaces agent recommendations cutting manual review time for auditors."
     },
     {
-      "title": "Autonomous Agricultural Robot",
-      "badge": "E-YANTRA FINALIST",
-      "link": "#",
+      "title": "Talent Compass — Recruiter Workspace for Blue-Collar Hiring",
+      "badge": "DEMO ↗",
+      "link": "#https://www.loom.com/share/cc8df0464ace4efebb3a6c298c113219",
       "image": "/images/WhatsApp Image 2026-08-17 at 1.42.50 PM.jpeg",
-      "body": "Navigates a farm-like arena while an onboard YOLO model detects plant disease from camera images — and the detections steer where it drives next. Built for the IIT Bombay e-Yantra Robotics Competition."
+      "body": "Every morning, a staffing team in Hubballi-Dharwad gets 1,500 raw job listings and a pile of seeker profiles messy Excel files with misspelled towns, mixed-up qualifications, no coordinates.\n\nTalent Compass takes that chaos and turns it into action. It reads the files, figures out what each column means, cleans the data, maps every location to real coordinates on OpenStreetMap, and splits \"ITI/Diploma/SSLC\" into matchable tokens. Within seconds, the recruiter sees a live map — blue circles for talent, orange for openings — and instantly spots where the gaps are.\n\nThen one click: the system scores every candidate against every vendor — how far they live, whether their skills and salary expectations fit — and produces a ranked shortlist. The recruiter hits send, a WhatsApp message goes out, and the calendar starts tracking. Four days later, a reminder pops up. Follow up. Close the loop. Someone gets hired.\n\nNo spreadsheet juggling. No manual matching. Just upload, see, send, track"
     }
   ],
   "roadmap": [
@@ -72,7 +72,7 @@
     }
   ],
   "thinking": [
-    "Evaluation is the bottleneck in voice AI, not model quality. We can generate speech that sounds human long before we can tell, at scale, whether a conversation actually worked."
+    "# My Thoughts on AI and the Future\n\nI’ve been thinking about what kind of new jobs and roles will exist in the next 10 years, especially seeing how fast AI, coding, and companies are changing. I also wonder if there is an AI bubble, considering companies are spending billions on cloud infrastructure and data centres. At the same time, the amount of electricity and water these data centres need makes me question whether this growth is actually sustainable. Maybe the AI bubble could burst, but even if it does, I feel like the way we work and the kinds of jobs we have will change completely."
   ],
   "offscreen": [
     "I decompress with an embarrassing number of Subway Surfers runs — the only game I am objectively improving at."
