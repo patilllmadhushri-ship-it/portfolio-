@@ -1,13 +1,13 @@
 {
   "hero": {
+    "name": "Madhushri Patil",
     "eyebrow": "Voice AI · Speech · Evals",
     "location": "Hubballi, India",
-    "name": "Madhushri Patil",
     "intro": "I work on voice AI — building agents that talk to people in Kannada, Hindi and English, and figuring out where they go wrong. AI Engineering student at KLE Tech, graduating 2026.",
-    "portrait": "/images/portrait-placeholder.svg",
+    "portrait": "/images/WhatsApp Image 2026-08-17 at 1.36.46 PM.jpeg",
     "status": "Open to roles · 2026",
-    "email": "patilmadhushri24@gmail.com",
-    "github": "https://github.com/",
+    "email": "patilllmadhushri@gmail.com",
+    "github": "https://github.com/patilllmadhushri-ship-it",
     "linkedin": "https://linkedin.com/"
   },
   "about": [
@@ -17,16 +17,16 @@
   ],
   "work": [
     {
-      "period": "2025 —",
+      "period": "Jan 2026 -May2026",
       "company": "Dialflo.ai",
       "role": "Voice AI & Forward Deployed Intern · 6 months",
       "body": "Built a Kannada voice agent that asks callers structured questions and collects their information, then developed English and Hindi conversational agents on the Dialflo platform. Audited production calls to trace where responses and flows broke, and wrote the preprocessing and prompt-generation scripts that made each next version less wrong.",
       "takeaway": "Prompt quality mattered less than I expected; conversation design and knowing what \"failure\" means mattered far more. You can't fix what you can't measure, and nobody has time to listen to every call — that gap is what I'm building for now."
     },
     {
-      "period": "2025",
+      "period": "June 2026 - August 2026",
       "company": "QuickCall.dev",
-      "role": "AI Engineer Intern · 1.5 months",
+      "role": "AI Engineer Intern · 3 months",
       "body": "Designed the telemetry pipeline — every message, tool call, token and error captured as JSONL, queued in SQLite with WAL mode, synced to Postgres. Built the Docker harness giving every candidate an identical sandbox, packaged the agent as Bun-compiled single executables for macOS, Linux and Windows, and contributed shared agent logic to the npm monorepo.",
       "takeaway": "Agents are only as debuggable as their telemetry. Building the boring layer underneath taught me more about reliability than building the model layer on top."
     },
@@ -40,35 +40,35 @@
   ],
   "projects": [
     {
-      "title": "Voice AI Evaluation System",
+      "title": "Voice Call Audit Assistant",
       "badge": "DEMO ↗",
-      "link": "#",
-      "image": "/images/project-placeholder.svg",
-      "body": "A batch audit pipeline for voice agents: reads transcripts instead of audio, detects conversation issues automatically, and aggregates call-level problems into structured reports you can debug from."
+      "link": "https://www.loom.com/share/fc24b782fd1b432ca0f090dfd5b77ae6",
+      "image": "/images/WhatsApp Image 2026-08-17 at 1.42.50 PM.jpeg",
+      "body": "Auditing voice calls typically means manually listening through hours of recordings  slow and hard to scale. Inspired by EkStep Foundation's voice AI testing framework, I built a proof-of-concept system that analyzes call transcripts, flags potential issues, and surfaces agent recommendations cutting manual review time for auditors."
     },
     {
       "title": "Autonomous Agricultural Robot",
       "badge": "E-YANTRA FINALIST",
       "link": "#",
-      "image": "/images/project-placeholder.svg",
+      "image": "/images/WhatsApp Image 2026-08-17 at 1.42.50 PM.jpeg",
       "body": "Navigates a farm-like arena while an onboard YOLO model detects plant disease from camera images — and the detections steer where it drives next. Built for the IIT Bombay e-Yantra Robotics Competition."
     }
   ],
   "roadmap": [
     {
+      "stage": "Planning",
+      "title": "Vapi for S2S — Real-Time Voice Orchestration Platform",
+      "body": "Most voice AI platforms like Vapi are built around traditional STT→LLM→TTS pipelines. S2S models skip that pipeline entirely but lose the hooks those platforms use for call transport, safety filtering, and state management along the way. This project rebuilds that orchestration layer natively for S2S: WebRTC streaming, real-time guardrails, call routing, and a monitoring dashboard for production voice agents."
+    },
+    {
       "stage": "Building",
-      "title": "Transcript-QA, in public",
-      "body": "Paste a call transcript, get back a structured list of what went wrong and where."
+      "title": "RL-Finetuned ASR for Real-Time Voice Agents",
+      "body": "Standard ASR models are trained for offline transcription accuracy, not the tradeoffs real-time voice agents need low latency, robustness to interruptions and noisy audio, and fast partial transcripts. This project fine-tunes an ASR model with reinforcement learning, optimizing directly for these production-relevant signals rather than word-error-rate alone"
     },
     {
-      "stage": "Next up",
-      "title": "An ASR benchmark for India",
-      "body": "Hindi, Kannada, Indian English and Hinglish — measured on speech people actually use."
-    },
-    {
-      "stage": "Someday",
-      "title": "Open-source voice tooling",
-      "body": "Small utilities for latency tracing and turn-taking analysis in realtime agents."
+      "stage": "Building",
+      "title": "Voice AI Evals  Upload, Test, and Score ASR, TTS & LLM",
+      "body": "Upload audio or voice samples , run them across multiple ASR, TTS, and LLM models, and get scored results back  so you can see which one actually performs best before you build on top of it."
     }
   ],
   "thinking": [
