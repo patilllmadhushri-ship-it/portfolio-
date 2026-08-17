@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: patilllmadhushri-ship-it/portfolio-
   branch: main
+  # Optional. Only needed for the "Sign In with GitHub" button.
+  # Uncomment and set to your auth worker URL — see "Nicer login" in the README.
+  # base_url: https://sveltia-cms-auth.yourname.workers.dev
 
 media_folder: "site/public/images"
 public_folder: "/images"

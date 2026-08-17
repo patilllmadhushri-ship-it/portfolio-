@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://madhushri.netlify.app'
+  // Change this to your real domain once Cloudflare Pages gives you one.
+  site: 'https://madhushri.pages.dev'
 });

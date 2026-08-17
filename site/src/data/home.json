@@ -4,7 +4,7 @@
     "location": "Hubballi, India",
     "name": "Madhushri Patil",
     "intro": "I work on voice AI — building agents that talk to people in Kannada, Hindi and English, and figuring out where they go wrong. AI Engineering student at KLE Tech, graduating 2026.",
-    "portrait": "/images/portrait.jpg",
+    "portrait": "/images/portrait-placeholder.svg",
     "status": "Open to roles · 2026",
     "email": "patilmadhushri24@gmail.com",
     "github": "https://github.com/",
@@ -43,14 +43,14 @@
       "title": "Voice AI Evaluation System",
       "badge": "DEMO ↗",
       "link": "#",
-      "image": "/images/project-eval.jpg",
+      "image": "/images/project-placeholder.svg",
       "body": "A batch audit pipeline for voice agents: reads transcripts instead of audio, detects conversation issues automatically, and aggregates call-level problems into structured reports you can debug from."
     },
     {
       "title": "Autonomous Agricultural Robot",
       "badge": "E-YANTRA FINALIST",
       "link": "#",
-      "image": "/images/project-robot.jpg",
+      "image": "/images/project-placeholder.svg",
       "body": "Navigates a farm-like arena while an onboard YOLO model detects plant disease from camera images — and the detections steer where it drives next. Built for the IIT Bombay e-Yantra Robotics Competition."
     }
   ],

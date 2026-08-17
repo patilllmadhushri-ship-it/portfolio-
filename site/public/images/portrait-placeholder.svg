@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Photo placeholder">
+  <rect width="400" height="500" fill="#eae5da"/>
+  <circle cx="200" cy="195" r="62" fill="#cfc7b7"/>
+  <path d="M78 460c0-70 55-122 122-122s122 52 122 122z" fill="#cfc7b7"/>
+  <text x="200" y="492" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" letter-spacing="1.5" fill="rgba(23,21,15,.45)">ADD YOUR PHOTO IN /ADMIN</text>
+</svg>
