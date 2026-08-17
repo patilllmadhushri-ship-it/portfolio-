@@ -277,12 +277,11 @@ section{
 }
 
 .prose p.lead{
-  font-size:21px;
-  line-height:1.5;
-  letter-spacing:-.01em;
-  color:var(--ink)
+  font-size:17px;
+  line-height:1.66;
+  letter-spacing:normal;
+  color:rgba(23,21,15,.85)
 }
-
 .stack{
   display:grid;
   gap:16px;
