@@ -50,6 +50,7 @@ section{scroll-margin-top:70px}
 .portrait{width:220px;height:280px;border-radius:12px;object-fit:cover;background:#EFE9DC}
 
 .prose p{font-size:17px;color:rgba(23,21,15,.85)}
+.prose p.lead{font-size:21px;line-height:1.5;letter-spacing:-.01em;color:var(--ink)}
 .stack{display:grid;gap:16px;max-width:60ch}
 
 .job{padding:26px 0;border-top:1px solid rgba(23,21,15,.1)}

@@ -30,9 +30,9 @@ const h = home.hero;
 
   <section id="about" style="border-top:1px solid var(--line);padding:52px 0 20px">
     <div class="row">
-      <div class="lab">About</div>
+      <div class="lab">How I got here</div>
       <div class="stack prose">
-        {home.about.map((para) => <p>{para}</p>)}
+        {home.about.map((para, i) => (i === 0 ? <p class="lead">{para}</p> : <p>{para}</p>))}
       </div>
     </div>
   </section>
