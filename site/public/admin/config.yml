@@ -1,0 +1,78 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "site/public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Homepage"
+    files:
+      - name: "home"
+        label: "Homepage content"
+        file: "site/src/data/home.json"
+        fields:
+          - label: "Top of page"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Eyebrow line", name: "eyebrow", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Intro paragraph", name: "intro", widget: "text" }
+              - { label: "Photo", name: "portrait", widget: "image" }
+              - { label: "Status pill", name: "status", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "GitHub URL", name: "github", widget: "string" }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - label: "About paragraphs"
+            name: "about"
+            widget: "list"
+            field: { label: "Paragraph", name: "text", widget: "text" }
+          - label: "Work"
+            name: "work"
+            widget: "list"
+            fields:
+              - { label: "Period", name: "period", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Description", name: "body", widget: "text" }
+              - { label: "What I took away", name: "takeaway", widget: "text", required: false }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description", name: "body", widget: "text" }
+          - label: "Building next"
+            name: "roadmap"
+            widget: "list"
+            fields:
+              - { label: "Stage", name: "stage", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "body", widget: "text" }
+          - label: "Thinking about"
+            name: "thinking"
+            widget: "list"
+            field: { label: "Paragraph", name: "text", widget: "text" }
+          - label: "Off-screen"
+            name: "offscreen"
+            widget: "list"
+            field: { label: "Paragraph", name: "text", widget: "text" }
+
+  - name: "blog"
+    label: "Blog posts"
+    folder: "site/src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary (shown on homepage)", name: "summary", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tag", name: "tag", widget: "string", required: false }
+      - { label: "Draft (hide from site)", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }

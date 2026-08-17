@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "eyebrow": "Voice AI · Speech · Evals",
+    "location": "Hubballi, India",
+    "name": "Madhushri Patil",
+    "intro": "I work on voice AI — building agents that talk to people in Kannada, Hindi and English, and figuring out where they go wrong. AI Engineering student at KLE Tech, graduating 2026.",
+    "portrait": "/images/portrait.jpg",
+    "status": "Open to roles · 2026",
+    "email": "patilmadhushri24@gmail.com",
+    "github": "https://github.com/",
+    "linkedin": "https://linkedin.com/"
+  },
+  "about": [
+    "I got into AI through robotics — teaching a machine to look at a field and tell which plants were sick. Somewhere between the camera and the wheels, I realised what I actually cared about was the interface: how a person and a system understand each other when neither speaks the other's language natively.",
+    "Voice is the honest version of that problem. Indian voice AI is harder than the demos suggest: accents shift mid-sentence, people code-mix Hindi and English freely, and callers answer three questions at once. Most of what I know came from listening to hundreds of real calls that didn't go to plan.",
+    "So I've ended up liking the unglamorous half of AI — transcripts, latency, the exact moment an agent misunderstands someone — and building the tooling that makes those moments findable instead of anecdotal."
+  ],
+  "work": [
+    {
+      "period": "2025 —",
+      "company": "Dialflo.ai",
+      "role": "Voice AI & Forward Deployed Intern · 6 months",
+      "body": "Built a Kannada voice agent that asks callers structured questions and collects their information, then developed English and Hindi conversational agents on the Dialflo platform. Audited production calls to trace where responses and flows broke, and wrote the preprocessing and prompt-generation scripts that made each next version less wrong.",
+      "takeaway": "Prompt quality mattered less than I expected; conversation design and knowing what \"failure\" means mattered far more. You can't fix what you can't measure, and nobody has time to listen to every call — that gap is what I'm building for now."
+    },
+    {
+      "period": "2025",
+      "company": "QuickCall.dev",
+      "role": "AI Engineer Intern · 1.5 months",
+      "body": "Designed the telemetry pipeline — every message, tool call, token and error captured as JSONL, queued in SQLite with WAL mode, synced to Postgres. Built the Docker harness giving every candidate an identical sandbox, packaged the agent as Bun-compiled single executables for macOS, Linux and Windows, and contributed shared agent logic to the npm monorepo.",
+      "takeaway": "Agents are only as debuggable as their telemetry. Building the boring layer underneath taught me more about reliability than building the model layer on top."
+    },
+    {
+      "period": "2022 — 26",
+      "company": "KLE Technological University",
+      "role": "B.Tech, AI Engineering",
+      "body": "Machine learning, deep learning, NLP, speech processing and robotics on paper. In practice: Python, C++, and evenings spent wiring LiveKit, Deepgram and ElevenLabs into things that talk back.",
+      "takeaway": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "Voice AI Evaluation System",
+      "badge": "DEMO ↗",
+      "link": "#",
+      "image": "/images/project-eval.jpg",
+      "body": "A batch audit pipeline for voice agents: reads transcripts instead of audio, detects conversation issues automatically, and aggregates call-level problems into structured reports you can debug from."
+    },
+    {
+      "title": "Autonomous Agricultural Robot",
+      "badge": "E-YANTRA FINALIST",
+      "link": "#",
+      "image": "/images/project-robot.jpg",
+      "body": "Navigates a farm-like arena while an onboard YOLO model detects plant disease from camera images — and the detections steer where it drives next. Built for the IIT Bombay e-Yantra Robotics Competition."
+    }
+  ],
+  "roadmap": [
+    {
+      "stage": "Building",
+      "title": "Transcript-QA, in public",
+      "body": "Paste a call transcript, get back a structured list of what went wrong and where."
+    },
+    {
+      "stage": "Next up",
+      "title": "An ASR benchmark for India",
+      "body": "Hindi, Kannada, Indian English and Hinglish — measured on speech people actually use."
+    },
+    {
+      "stage": "Someday",
+      "title": "Open-source voice tooling",
+      "body": "Small utilities for latency tracing and turn-taking analysis in realtime agents."
+    }
+  ],
+  "thinking": [
+    "Evaluation is the bottleneck in voice AI, not model quality. We can generate speech that sounds human long before we can tell, at scale, whether a conversation actually worked."
+  ],
+  "offscreen": [
+    "I decompress with an embarrassing number of Subway Surfers runs — the only game I am objectively improving at."
+  ]
+}

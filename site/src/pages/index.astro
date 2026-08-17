@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import home from '../data/home.json';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const h = home.hero;
+---
+<Base>
+  <section class="hero">
+    <div>
+      <div class="hero-meta">
+        <span class="lab" style="padding:0">{h.eyebrow}</span>
+        <span style="flex:1;height:1px;background:rgba(23,21,15,.18);max-width:120px"></span>
+        <span class="lab" style="padding:0">{h.location}</span>
+      </div>
+      <h1>{h.name}</h1>
+      <p>{h.intro}</p>
+      <div class="hero-links">
+        <a href={'mailto:' + h.email} class="ln">email</a>
+        <a href={h.github} class="ln">github</a>
+        <a href={h.linkedin} class="ln">linkedin</a>
+        <a href="#writing" class="ln">writing</a>
+        <span class="status"><i></i>{h.status}</span>
+      </div>
+    </div>
+    <img class="portrait" src={h.portrait} alt={h.name} />
+  </section>
+
+  <section id="about" style="border-top:1px solid var(--line);padding:52px 0 20px">
+    <div class="row">
+      <div class="lab">About</div>
+      <div class="stack prose">
+        {home.about.map((para) => <p>{para}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="padding:36px 0 0">
+    <div class="row" style="margin-bottom:26px"><div class="lab">Work</div><div></div></div>
+    {home.work.map((job) => (
+      <div class="row job">
+        <div class="lab" style="color:rgba(23,21,15,.55)">{job.period}</div>
+        <div>
+          <div style="display:grid;gap:2px">
+            <h3>{job.company}</h3>
+            <span class="meta">{job.role}</span>
+          </div>
+          <p class="body">{job.body}</p>
+          {job.takeaway && (<div class="takeaway"><span>What I took away</span>{job.takeaway}</div>)}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section id="projects" style="padding:44px 0 0">
+    <div class="row" style="margin-bottom:22px"><div class="lab">Projects</div><div></div></div>
+    <div class="row">
+      <div></div>
+      <div style="display:grid;gap:16px">
+        {home.projects.map((p) => (
+          <a href={p.link} class="card proj">
+            <img src={p.image} alt={p.title} />
+            <div>
+              <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:8px">
+                <h3>{p.title}</h3>
+                <span class="tagm">{p.badge}</span>
+              </div>
+              <p style="font-size:15.5px;color:rgba(23,21,15,.75)">{p.body}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="writing" style="padding:52px 0 0">
+    <div class="row">
+      <div class="lab">Writing</div>
+      <div style="display:grid;gap:2px">
+        {posts.map((post) => (
+          <a class="post-link" href={`/blog/${post.slug}/`}>
+            <span class="t">{post.data.title}</span>
+            <span class="tagm" style="align-self:center">Read ↗</span>
+            <span class="s">{post.data.summary}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="next" style="padding:52px 0 0">
+    <div class="row">
+      <div class="lab">Building next</div>
+      <div>
+        <div class="roadmap">
+          <div class="spine"></div>
+          {home.roadmap.map((r, i) => (
+            <div class="stage">
+              <div class="stage-head">
+                <span class={i === 0 ? 'node on' : 'node'}></span>
+                <span style={i === 0 ? 'color:var(--rust)' : ''}>{r.stage}</span>
+              </div>
+              <div class="card">
+                <h4>{r.title}</h4>
+                <p>{r.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:52px 0 0">
+    <div class="row">
+      <div class="lab">Thinking about</div>
+      <div class="stack prose">{home.thinking.map((t) => <p>{t}</p>)}</div>
+    </div>
+  </section>
+
+  <section id="offscreen" style="padding:52px 0 0">
+    <div class="row">
+      <div class="lab">Off-screen</div>
+      <div class="stack prose">{home.offscreen.map((t) => <p>{t}</p>)}</div>
+    </div>
+  </section>
+
+  <section style="margin-top:64px;border-top:1px solid var(--line);padding-top:34px">
+    <div class="row">
+      <div class="lab">Contact</div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+        <a href={'mailto:' + h.email} class="btn btn-lg">{h.email}</a>
+        <a href={h.linkedin} class="btn-ghost">LinkedIn</a>
+        <a href={h.github} class="btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+</Base>
