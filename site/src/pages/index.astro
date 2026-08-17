@@ -83,7 +83,7 @@ const h = home.hero;
           <a class="post-link" href={`/blog/${post.slug}/`}>
             <span class="t">{post.data.title}</span>
             <span class="tagm" style="align-self:center">Read ↗</span>
-            <span class="s">{post.data.summary}</span>
+            {post.data.summary && <span class="s">{post.data.summary}</span>}
           </a>
         ))}
       </div>

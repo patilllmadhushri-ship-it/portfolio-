@@ -75,7 +75,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary (shown on homepage)", name: "summary", widget: "text" }
+      - { label: "Summary (shown on homepage)", name: "summary", widget: "text", required: false }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tag", name: "tag", widget: "string", required: false }
       - { label: "Draft (hide from site)", name: "draft", widget: "boolean", default: false }
