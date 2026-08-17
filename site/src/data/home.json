@@ -3,7 +3,7 @@
     "name": "Madhushri Patil",
     "eyebrow": "Voice AI · Speech · Evals",
     "location": "Hubballi, India",
-    "intro": "I work on voice AI — building agents that talk to people in Kannada, Hindi and English, and figuring out where they go wrong. AI Engineering student at KLE Tech, graduating 2026",
+    "intro": "# I build **AI systems for what’s next.**\n\nI’m a fresh AI Engineering graduate exploring the edge of Voice AI — from building conversational agents and evaluating real conversations to working on AI agent infrastructure and products for blue-collar workers.\n\nI’m particularly interested in where Voice AI is heading: **S2S models, real-time voice orchestration, RL-finetuned ASR, and better ways to evaluate AI before it reaches production.**\n\nI’m early in my journey, but I like staying ahead of the curve, picking up hard problems, and turning ideas into things that actually work.",
     "portrait": "/images/WhatsApp Image 2026-08-17 at 10.14.42 PM.jpeg",
     "status": "Open to roles · 2026",
     "email": "patilllmadhushri@gmail.com",
@@ -11,9 +11,9 @@
     "linkedin": "https://linkedin.com/"
   },
   "about": [
-    "I got into AI through robotics — teaching a machine to look at a field and tell which plants were sick. Somewhere between the camera and the wheels, I realised what I actually cared about was the interface: how a person and a system understand each other when neither speaks the other's language natively.",
-    "Voice is the honest version of that problem. Indian voice AI is harder than the demos suggest: accents shift mid-sentence, people code-mix Hindi and English freely, and callers answer three questions at once. Most of what I know came from listening to hundreds of real calls that didn't go to plan.",
-    "So I've ended up liking the unglamorous half of AI — transcripts, latency, the exact moment an agent misunderstands someone — and building the tooling that makes those moments findable instead of anecdotal."
+    "It started in my second year with a group project on Explainable AI. Using LIME, I became curious about what happens inside black box models and why they make certain decisions. That curiosity pulled me deeper into AI and eventually into robotics, where I worked on an autonomous agricultural robot through the e Yantra Robotics Competition.",
+    "Later, at Dialflo, I got the chance to build Kannada voice agents for ITI candidates and vendors. Working with real users made me notice the gaps in Voice AI and led me to build a system for evaluating conversations and finding those failures. I also explored building a professional network for blue collar workers.",
+    "At QuickCall, I got deeper into the engineering side of AI through agent infrastructure, telemetry and sandboxing. Now I’m exploring S2S voice models, real time voice, better ASR and AI evaluation. I’m still early in my journey, but I learn best by building, finding gaps and trying to solve them."
   ],
   "work": [
     {
